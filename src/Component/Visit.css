@@ -1,0 +1,25 @@
+.animated-image {
+  opacity: 0;
+  transform: translateX(-50px); /* Start position of the image */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Adjusted transition timing */
+}
+
+.show .animated-image {
+  opacity: 1;
+  transform: translateX(0); /* End position of the image */
+}
+
+.show .bg-gray-600 {
+  animation: slideInRight 0.5s ease forwards; /* Adjusted animation timing */
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

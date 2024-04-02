@@ -1,0 +1,39 @@
+/* Banner.css */
+
+.banner-images {
+    position: relative;
+    height: 90vh; /* Set the height to 100% of the viewport height */
+  }
+  
+  .banner-images img {
+    transition: transform 1s ease, opacity 1s ease; /* Apply transition to the transform and opacity properties */
+    transform: translateX(100%); /* Initial position, start off-screen to the right */
+  }
+  
+  .banner-images.loaded img {
+    transform: translateX(0); /* Final position, bring image to its original position */
+    opacity: 1; /* Fully opaque by default */
+  }
+  
+  @media (max-width: 768px) {
+    .banner-images.loaded img {
+      opacity: 0.5; /* Reduce opacity for small screens */
+    }
+  }
+  
+  .banner-text {
+    animation: textAnimation 5s infinite; /* Apply the text animation */
+  }
+  
+  @keyframes textAnimation {
+    0% {
+      opacity: 0; /* Start with opacity 0 */
+    }
+    50% {
+      opacity: 1; /* Show the text */
+    }
+    100% {
+      opacity: 0; /* Hide the text */
+    }
+  }
+  

@@ -1,0 +1,59 @@
+/* Card.css */
+.image-container {
+    overflow: hidden;
+  }
+  
+  .image {
+    width: 100%;
+    transform: translateX(-100%);
+    animation: slideInLeft 1s forwards;
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  
+  /* Card.css */
+.image-container {
+    overflow: hidden;
+  }
+  
+  .image {
+    width: 100%;
+    transform: translateX(-100%);
+    animation: slideInLeft 1s forwards;
+  }
+  
+  .card-container {
+    overflow: hidden;
+  }
+  
+  .card {
+    transform: translateX(100%);
+    animation: slideInRight 1s forwards;
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  

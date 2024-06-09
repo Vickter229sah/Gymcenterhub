@@ -1,14 +1,17 @@
-# In this project we used functionality Gmail SMTP and Firestore database 
 
 # Getting Started with Create React App
+
+# In this project we used functionality Gmail SMTP and Firestore database 
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
-## Need to install node_module:
+## Needed to install node_module:
 
-npm install 
-npm init
+### `npm install`
+
+### `npm init`
 
 
 ## Available Scripts
